@@ -1,0 +1,76 @@
+html,body{
+    --couleur-background : 	#282c34;
+    --couleur-texte :	#e3e7ed;
+    --couleur-texte-bleu : 	#169fe3;
+    --couleur-background-bouton : 	#3c3f49;
+    --couleur-background-bouton-select :	rgba(22,159,227,0.7);
+    --couleur-background-bouton-hover :	#3794c3;
+    background-color: var(--couleur-background);
+    margin-left: 50px;
+    margin-right: 10px;
+}
+@font-face {
+    font-family: "MaximumImpact";
+    src :url("../webfonts/Maximum-Impact.ttf");
+}
+.container {
+    display: grid; 
+    grid-template-columns: 60% 1fr; 
+    grid-template-rows: 1fr; 
+    grid-gap: 30px; 
+}
+.gauche { 
+    grid-area: 1 / 1 / 2 / 3;
+    
+
+}
+.droite { grid-area: 1 / 2 / 2 / 3; }
+#entete_image img{
+    width: 60%;
+}
+
+#LotsLivres h1,h3{
+    font-family: "MaximumImpact";
+    color: var(--couleur-texte);
+}
+button{
+    background-color: var(--couleur-background-bouton);
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    color: var(--couleur-texte);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+button:hover{
+    background-color:lightgray;
+    color: var(--couleur-background);
+}
+.container_FlexWrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+
+}
+
+.container_FlexWrap, #livre{
+    color: var(--couleur-texte);
+    margin: 10px;
+}
+#livre:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.01);
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--couleur-background-bouton-select);
+    z-index: 12;
+}
+#messageBleu{
+    color: var(--couleur-texte-bleu);
+    font-size: 3em;
+}
+
+
+
