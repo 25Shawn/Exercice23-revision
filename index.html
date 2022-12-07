@@ -6,28 +6,28 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e538d494e4.js" crossorigin="anonymous"></script>
     <title>Exercice 23</title>
 </head>
 <body>
     <div class="container">
-        
-
-    </div>
-    <div class="container">
         <div class="gauche">
+            
             <div id="entete_image">
                 <img src="images/entete_opaque.png" alt="entete_image">
             </div>
+
             <div id="LotsLivres">
                 <h1>Lot de livre</h1>
                 <h3>Filtres de lots</h3>
 
-                <button  id="lots1">Lot complet de 14 articles</button>
-                <button  id="lots2">Lot de 10 articles</button>
-                <button  id="lots3">Lot de 5 articles</button>
+                <button type="button" id="lots1">Lot complet de 14 articles</button>
+                <button type="button" id="lots2">Lot de 10 articles</button>
+                <button type="button" id="lots3">Lot de 5 articles</button>
 
-                <div id="messageBleu" class="hidden"></div>
+                <div id="messageBleu"></div>
             </div>
+            
             <div class="container_FlexWrap">
 
                 <div id="livre">
@@ -53,7 +53,7 @@
                     <img id="imagelivre"src="images/livres/livre05.avif" alt="">
                     <div class="titre">Flask Web Development</div>
                 </div>
-                <div id="livre">
+                <div id="livre" >
                     <img id="imagelivre"src="images/livres/livre06.avif" alt="">
                     <div class="titre">Learning GraphQL</div>
                 </div>
@@ -92,7 +92,53 @@
                 
             </div>
         </div>
-        <div class="droite"></div>
+        <div class="droite">
+            <div id="entete_droite">
+                <h1>Maitrisez le développement d'application Web</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi repudiandae libero minima, cum, neque quibusdam aspernatur beatae quod sunt odio repellendus soluta ipsum aperiam autem quam. Recusandae, porro ea.Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quasi repudiandae libero minima, cum, neque quibusdam aspernatur beatae quod sunt odio repellendus soluta ipsum aperiam autem quam. Recusandae, porro ea.</h3>
+            </div>
+            <div id="icones">
+                <div id="icone_seul1">
+                    <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+                    <h3>Payez 1,35 $CA ou plus</h3>
+                </div>
+                <div id="icone_seul2">
+                    <i class="fa-solid fa-people-carry-box"></i>
+                    <h3>6 534 Vendus</h3>
+                </div>
+                <div id="icone_seul3">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Utiliser sur n'importe quel appareil</h3>
+                </div>
+                <div id="icone_seul4">
+                    <i class="fa-solid fa-file"></i>
+                    <h3>PDF, ePUB et MOBI</h3>
+                </div>
+            </div>
+            <fieldset class="fieldset">
+                <legend><i class="fa-solid fa-heart"></i></legend>
+                <h3>Ce lot a permis de collecter 12 889$CA pour une association carritative !</h3>
+            </fieldset>
+            <div id="GrandText">
+                <h1>Valeur de 808,58$CA Payer ce que vous voulez</h1>
+                <h3>Payez moins pour obtenir moins d'article, ou payez plus pour donner plus aux éditeurs, à Humble et aux associations caritatives</h3>
+            </div>
+            <form id="formulaire"action="">
+                
+                <div class="grilleMontant">
+                    <input type="number" placeholder="Autre montant"class="input"></input>
+                    <div type="button" class="DollarCA">$CA</div>
+                    <div type="button" class="premiere">1,35 $CA</div>
+                    <div type="button" class="deuxieme">13,54 $CA</div>
+                    <div type="button" class="troisieme">24,37 $CA</div>
+                    <div type="button" class="trois">30 $CA</div>
+                    <div type="button" class="troisi">35 $CA</div>
+                    <div type="button" class="troi">40 $CA</div>
+                </div>
+                
+                <button id="validation" type="submit">validation</button>
+            </form>
+        </div>
       </div>
 </body>
 </html>
